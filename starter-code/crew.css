@@ -1,0 +1,282 @@
+#icon { 
+  display: inline;
+  float: left;
+  margin-left: 55px;
+  padding-top: 20px;
+}
+/*Line between icon and navbar*/
+#line { 
+  width: 537px;
+  height: 0.99px;
+  background-color: rgba(255, 255, 255, 0.225) ;
+  margin-left: 140px;
+  margin-top: 45px;
+  float: left;
+  -webkit-mask-image: linear-gradient( to right, black 90%, transparent 100%);
+  mask-image: linear-gradient( to right, black 90%, transparent 100%);
+  margin-right: auto;
+}
+/*Navbar links*/
+#navbar a { 
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  color: white;
+  display: inline;
+  text-align: center;
+  padding: 29px 15px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+/*Navbar links hover and active*/
+#navbar .active{
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+#navbar .other:hover { 
+  border-bottom: 3px solid rgba(255, 255, 255, 0.342);
+}
+/*Navbar unordered list*/
+#navbar ul { 
+  list-style-type: none;
+  padding: 30px 0px;
+  background-color: rgba(255, 255, 255, 0.068);
+  width: 700px;
+  float: right;
+  backdrop-filter: blur(30px);
+  -webkit-mask-image: linear-gradient( to left, black 70%, transparent 100%);
+  mask-image: linear-gradient( to left, black 70%, transparent 100%);
+}
+/*Navbar list items*/
+#navbar li { 
+  float: right;
+  position: relative;
+}
+/*Navbar text*/
+#navbar .text { 
+  font-size: 16px;
+  display: inline-block;
+  font-weight: lighter;
+}
+/*Number in navbar*/
+.number { 
+  font-weight: bold;
+  font-family: "barlow condensed", sans-serif;
+}
+/*Navbar text with number*/
+.text1, .text4 {  
+  font-weight: lighter;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-family: "barlow condensed", sans-serif;
+  font-weight: 200;
+  color: white;
+}
+
+#navbar2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-left: 19px;
+  margin-right: 290px;
+  padding: 20px 00px;
+}
+#navbar2 a{
+  height: 12px;
+  width: 12px;
+  background-color: rgba(255, 255, 255, 0.46);
+  border-radius: 50%;
+}
+#navbar2 a:hover {
+  background-color: rgba(255, 255, 255, 0.432);
+  transition: background-color 0.3s ease-in-out;
+}
+
+#navbar2 #active {
+  background-color: rgb(255, 255, 255);
+}
+
+
+#body2 {
+  background: url(assets/crew/background-crew-desktop.jpg) no-repeat center
+    center fixed;
+  margin-right: 0px;
+  background-size: cover;
+  background-position: center;
+}
+
+#text { 
+  float: left;
+  width: 450px;
+  margin-left: 170px;
+  margin-top: 50px;
+}
+/*Main title on pages*/
+h1 { 
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 50px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+/*Text after main title on index page*/
+h5 {
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #ffffff;
+  font-family: "barlow condensed", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: auto;
+
+}
+
+h3 { 
+  font-size: 23px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff6e;
+  font-family: "Bellefair", serif;
+  font-weight: 300;
+  margin-top: 100px;
+}
+
+.numbers {
+  font-weight: bold;
+  font-family: "barlow condensed", sans-serif;
+  font-size: 20px;
+  color: #ffffff6e;
+  margin-right: 10px;
+}
+/*Text paragraph on index page*/
+#p-1 { 
+  font-family: "Barlow condensed", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 27px;
+  max-width: 330px;
+  color: #d0d6f9;
+  margin-bottom: 60px;
+}
+
+#image img {
+  height: 600px;
+  flex: right;
+  margin-top: 60px;
+  margin-bottom: -25px;
+  margin-left: 90px;
+}
+
+#image2 img{
+  height: 600px;
+  flex: right;
+  margin-top: 60px;
+  margin-bottom: -25px;
+  margin-left: 90px;
+}
+
+#image3 img{
+  height: 600px;
+  flex: right;
+  margin-top: 60px;
+  margin-bottom: -25px;
+  margin-left: 90px;
+}
+#image4 img{
+  height: 600px;
+  flex: right;
+  margin-top: 60px;
+  margin-bottom: -25px;
+  margin-left: 90px;
+}
+@media (max-width: 1024px) {
+  #body2 {
+    background: url(assets/crew/background-crew-tablet.jpg) no-repeat ;
+    background-position: center;
+    background-size: cover;
+    max-width: 1024px;
+  }
+  
+  #line {
+    height: 0px;
+    margin-left: 50px ;
+  }
+  #navbar ul {
+    width: 500px;
+    margin-top: -55px;
+    margin-right: 0px;
+    backdrop-filter: blur(30px);
+    -webkit-mask-image: linear-gradient( to left , black 100%, transparent 100%);
+    mask-image: linear-gradient( to left, black 100%, transparent 100%);
+  }
+
+  #navbar a{
+    padding: 29px 15px;
+  }
+
+  #space {
+    align-self: center;
+    text-align: center;
+  }
+
+  h3 {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  #icon {
+    margin-top: -10px;
+    margin-left: 6px;
+  }
+  h5 {
+    margin-left: -150px;
+    margin-top: 0px;
+  }
+  p {
+    margin-left: 50px;
+    align-items: center;
+    text-align: center;
+  }
+
+  #navbar2 {
+    margin-top: -30px;
+    margin-left: 130px;
+    margin-right: 170px;
+  }
+
+  #image img {
+    padding-left: 10px;
+    margin-left: 200px; ;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: -12px;
+    height: 500px;
+  }
+  #image2 img {
+    padding-left: 10px;
+    margin-left: 120px; ;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: -12px;
+    height: 500px;
+  }
+  #image3 img {
+    padding-left: 10px;
+    margin-left: 140px; ;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: -12px;
+    height: 500px;
+  }
+  #image4 img {
+    padding-left: 10px;
+    margin-left: 160px; ;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: -12px;
+    height: 500px;
+  }
+}
